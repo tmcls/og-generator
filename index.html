@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>OG-Generator</title>
+	</head>
+	<body style="font-family: Helvetica;">
+		<table width="100%">
+			<tr>
+				<td>Background image: <input type="file" id="fileInput" name="logo" multiple="" /></td>
+				<td>Partner Logo: <input type="file" id="logoInput" name="logo" multiple="" /</td>
+			</tr>
+			<tr>
+				<td><canvas id="backgroundCanvas" width="600" height="400" style="border:0px solid #000000;"></canvas></td>
+				<td><canvas id="logoCanvas" width="600" height="400" style="border:0px solid #000000;"></canvas></td>
+			</tr>
+		</table>
+
+		<div id="result" style="display: none;">
+			<H2>Cropped OG-Image:</H2>
+			<canvas id="previewCanvas" width="1200" height="630" style="border:0px solid #000000;"></canvas>
+			
+			<div><a href="#" target="_blank" class="button" id="btn-download" download="OG-image.jpg">Download</a></div>
+		</div>
+
+		<script src="main.js"></script>
+		<script src="ImageCropper.js"></script>
+	</body>
+</html>
